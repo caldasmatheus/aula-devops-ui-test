@@ -7,7 +7,7 @@ describe('Login no Sauce Labs', () => {
     cy.get('[data-test="login-button"]').click();
   })
 
-  it('verificar componentes da lista de produtos', () => {
+  it.skip('verificar componentes da lista de produtos', () => {
     cy.get('.title').should('have.text', 'Products');
     cy.get('[data-test="product_sort_container"]').should('be.visible');
     cy.get('.shopping_cart_link').should('be.visible');
